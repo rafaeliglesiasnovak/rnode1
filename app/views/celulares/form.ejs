@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div class='erros'>
+             <%if(errosValidacao){%>
+                <ul>
+                    <%for(var i=0;i<errosValidacao.length;i++){%>
+                        <li><%=errosValidacao[i].param%> - <%=errosValidacao[i].msg%></li>
+                    <%}%>
+                </ul>
+             <%}%>
+        </div>
+        <form action="/celulares" method="post">
+            <div>
+                <label for="udid">UDID</label>
+                <input type="text" id="udid" name="udid" value="<%=celular.udid%>" placeholder="coloque o udid"/>
+            </div>
+            <div>
+                <label for="beacon">BEACON</label>
+                <input type="text" id="beacon" name="beacon" value="<%=celular.beacon%>" placeholder="coloque o beacon"/>
+            </div>
+            <div>
+                <label for="localizacao">Localizacao</label>
+                <input type="text"  id="localizacao" name="localizacao" value="<%=celular.descricao%>" placeholder="coloque a localizacao"</>
+            </div>
+
+            <input type="submit" value="gravar"/>
+        </form>
+    </body>
+</html>

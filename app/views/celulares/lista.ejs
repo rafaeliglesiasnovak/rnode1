@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <table border="1px">
+            <tr>
+                <td>udid</td>
+                <td>beacon</td>
+                <td>localizacao</td>
+            </tr>
+            <tr>
+                <% for(var i=0; i<lista.length; i++) {%>
+                    <tr>
+                        <td><%= lista[i].udid %></td>
+                        <td><%= lista[i].beacon %></td>
+                        <td><%= lista[i].localizacao %></td>
+                    </tr>
+                <% } %>
+            </tr>
+        </table>
+    </body>
+</html>

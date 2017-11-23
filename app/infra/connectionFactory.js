@@ -6,7 +6,7 @@ function createDBConnection() {
             host: 'localhost',
             user: 'root',
             password: '',
-            database: 'teste_node'
+            database: 'tcc'
         });
     }
 
@@ -15,7 +15,7 @@ function createDBConnection() {
             host: 'localhost',
             user: 'root',
             password: '',
-            database: 'teste_node'
+            database: 'tcc'
         });
     }
 }

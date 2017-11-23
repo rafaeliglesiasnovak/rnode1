@@ -3,7 +3,7 @@ var http = require ('http');
 var configuracoes = {
     hostname: 'localhost',
     port: 3000,
-    path: '/produtos',
+    path: '/celulares',
     method: 'post',
     headers: {
         'Accept': 'application/json',
@@ -18,10 +18,10 @@ var client = http.request(configuracoes, function(res){
     });
 });
 
-var produto = {
+var celular = {
 	titulo: '',
 	descricao: 'node ++',
 	preco: '100'
 }
 
-client.end(JSON.stringify(produto));
+client.end(JSON.stringify(celular));
